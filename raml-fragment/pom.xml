@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>YOUR_GROUP_ID</groupId>
+    <artifactId>ASSET_ID</artifactId>
+    <version>1.2.3</version>
+
+    <name>raml fragment</name>
+    <description>This raml-fragment was published through Exchange Maven Facade API v3</description>
+
+    <properties>
+        <apiVersion>v1</apiVersion>
+        <mainFile>user.raml</mainFile>
+        <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_ORG_ID/maven</exchange.url>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+              <artifactId>maven-jar-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>default-jar</id>
+                  <phase>none</phase>
+                  <configuration>
+                    <finalName>unwanted</finalName>
+                    <classifier>unwanted</classifier>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>${maven-assembly-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>create-distribution</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>/src/main/resources/assembly/assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>exchange-mule4-maven-plugin</artifactId>
+                <version>0.0.0-valkyr</version>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>exchange-pre-deploy</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>deploy</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>exchange-deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>exchange-dev</id>
+            <name>Corporate Repository</name>
+            <url>${exchange.url}</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>exchange-dev</id>
+            <name>Corporate Repository</name>
+            <url>${exchange.url}</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
+</project>
