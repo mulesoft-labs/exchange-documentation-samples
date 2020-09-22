@@ -1,0 +1,4 @@
+org.mule.weave.v2.el.MuleTypedValueMapper
+org.mule.weave.v2.el.CursorStreamProviderValueMapper
+org.mule.weave.v2.el.CursorIteratorProviderValueMapper
+org.mule.weave.v2.el.MultiMapValueMapper

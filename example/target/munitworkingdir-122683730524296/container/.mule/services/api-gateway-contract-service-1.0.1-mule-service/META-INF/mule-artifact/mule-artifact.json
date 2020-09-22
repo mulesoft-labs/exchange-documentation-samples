@@ -1,0 +1,14 @@
+{
+  "name": "API Gateway SLA Service",
+  "minMuleVersion": "4.0.0",
+  "requiredProduct": "MULE_EE",
+  "serviceProviderClassName": "com.mulesoft.mule.gateway.service.ContractServiceProvider",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

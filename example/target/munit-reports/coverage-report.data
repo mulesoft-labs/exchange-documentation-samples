@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "name": "hello-world.xml",
+      "weight": 100.0,
+      "flows": [
+        {
+          "name": "hello-worldFlow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "hello-worldFlow/processors/0",
+              "lineNumber": 14
+            },
+            {
+              "path": "hello-worldFlow/processors/1",
+              "lineNumber": 15
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "hello-worldFlow/processors/0",
+              "lineNumber": 14
+            },
+            {
+              "path": "hello-worldFlow/processors/1",
+              "lineNumber": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

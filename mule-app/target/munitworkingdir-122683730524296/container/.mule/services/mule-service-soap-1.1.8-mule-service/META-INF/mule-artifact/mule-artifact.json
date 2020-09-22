@@ -1,0 +1,14 @@
+{
+  "name": "SOAP service",
+  "minMuleVersion": "4.0.0",
+  "requiredProduct": "MULE",
+  "serviceProviderClassName": "org.mule.service.soap.provider.SoapServiceProvider",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

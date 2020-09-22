@@ -1,0 +1,14 @@
+{
+  "name": "DataWeave service",
+  "minMuleVersion": "4.0.0",
+  "requiredProduct": "MULE",
+  "serviceProviderClassName": "org.mule.weave.v2.el.WeaveServiceProvider",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

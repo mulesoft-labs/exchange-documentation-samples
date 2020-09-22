@@ -1,0 +1,14 @@
+{
+  "name": "Scheduler service",
+  "minMuleVersion": "4.1.0",
+  "requiredProduct": "MULE",
+  "serviceProviderClassName": "org.mule.service.scheduler.provider.SchedulerServiceProvider",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

@@ -1,0 +1,263 @@
+2020-09-22 14:17:10,078 [Embedded] INFO  org.mule.runtime.module.launcher.MuleContainer - 
+**********************************************************************
+* Mule Runtime and Integration Platform                              *
+* Version: 4.1.5 Build: 23148a36                                     *
+* MuleSoft, Inc.                                                     *
+* For more information go to                                         *
+* https://www.mulesoft.com/platform/soa/mule-esb-enterprise          *
+*                                                                    *
+* Server started: 9/22/20 2:17 PM                                    *
+* JDK: 1.8.0_232 (mixed mode)                                        *
+* JDK properties:                                                    *
+*  - java.vendor = Azul Systems, Inc.                                *
+*  - java.vm.name = OpenJDK 64-Bit Server VM                         *
+* - java.home =                                                      *
+* /Users/figuacel/.sdkman/candidates/java/8.0.232-zulu/jre           *
+* OS: Mac OS X (10.15.6, x86_64)                                     *
+* Host: feiguacel-ltm.internal.salesforce.com (10.55.42.51)          *
+* Mule services:                                                     *
+*  - mule-service-http-ee-1.2.0-mule-service.jar                     *
+*  - mule-service-weave-2.1.8-mule-service.jar                       *
+*  - mule-service-scheduler-1.1.7-mule-service.jar                   *
+*  - mule-service-oauth-1.1.6-mule-service.jar                       *
+*  - api-gateway-contract-service-1.0.1-mule-service.jar             *
+*  - mule-service-soap-1.1.8-mule-service.jar                        *
+*  - mule-service-weave-ee-2.1.8-mule-service.jar                    *
+* Mule server plugins:                                               *
+*  - munit-coverage-plugin-2.2.4-mule-server-plugin.jar              *
+* Mule system properties:                                            *
+*  - mule.testingMode = true                                         *
+* - mule.home =                                                      *
+* /Users/figuacel/Development/repositories/mule/exchange-maven-v3-ex *
+* amples/mule-app/target/munitworkingdir-122683730524296/container   *
+*  - mule.mode.embedded = true                                       *
+**********************************************************************
+2020-09-22 14:17:11,362 [Embedded] INFO  org.mule.service.scheduler.internal.config.ContainerThreadPoolsConfig - No thread pools config file found. Using default values.
+2020-09-22 14:17:11,444 [Embedded] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-09-22 14:17:11,496 [Embedded] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-22 14:17:11,497 [Embedded] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+2020-09-22 14:17:11,497 [Embedded] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-09-22 14:17:11,498 [Embedded] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) '[MuleRuntime].' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-22 14:17:11,498 [Embedded] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler '[MuleRuntime].' initialized from an externally provided properties instance.
+2020-09-22 14:17:11,498 [Embedded] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.3
+2020-09-22 14:17:11,498 [Embedded] INFO  org.quartz.core.QuartzScheduler - Scheduler [MuleRuntime]._$_NON_CLUSTERED started.
+2020-09-22 14:17:11,508 [Embedded] INFO  org.mule.runtime.module.service.internal.manager.MuleServiceManager - 
+**********************************************************************
+* Started DefaultSchedulerService                                    *
+*                                                                    *
+* Resolved configuration values:                                     *
+*                                                                    *
+* gracefulShutdownTimeout:       15000 ms                            *
+* cpuLight.threadPool.size:      24                                  *
+* cpuLight.workQueue.size:       0                                   *
+* io.threadPool.maxSize:         1420                                *
+* io.threadPool.threadKeepAlive: 30000 ms                            *
+* cpuIntensive.threadPool.size:  24                                  *
+* cpuIntensive.workQueue.size:   1024                                *
+*                                                                    *
+* These can be modified by editing 'conf/scheduler-pools.conf'       *
+**********************************************************************
+2020-09-22 14:17:11,717 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Initializing core extensions
+2020-09-22 14:17:11,735 [Embedded] INFO  com.mulesoft.mule.runtime.module.cluster.internal.config.ClusterTicketFileLoader - /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/.mule/mule-cluster.properties (No such file or directory)
+2020-09-22 14:17:11,736 [Embedded] WARN  com.mulesoft.mule.runtime.module.cluster.internal.HazelcastClusterCoreExtension - No cluster ID was specified -- High Availability will be disabled:
+2020-09-22 14:17:11,736 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.module.cluster.internal.HazelcastClusterCoreExtension@30c85662' initialized
+2020-09-22 14:17:11,745 [Embedded] INFO  com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer - Unzipping plugin file: munit-coverage-plugin-2.2.4-mule-server-plugin.jar
+2020-09-22 14:17:11,746 [Embedded] WARN  com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer - Cannot unzip plugin file 'munit-coverage-plugin-2.2.4-mule-server-plugin.jar'
+2020-09-22 14:17:11,746 [Embedded] WARN  com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer - Cannot delete plugin file 'munit-coverage-plugin-2.2.4-mule-server-plugin.jar'. Plugin will be overwritten on restart
+2020-09-22 14:17:11,746 [Embedded] INFO  com.mulesoft.mule.runtime.plugin.factory.ServerPluginDescriptorFactory - Creating plugin from folder /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/server-plugins/munit-coverage-plugin-2.2.4-mule-server-plugin
+2020-09-22 14:17:11,746 [Embedded] WARN  com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer - Cannot load descriptor for plugin 'munit-coverage-plugin-2.2.4-mule-server-plugin': Artifact descriptor does not exists: /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/server-plugins/munit-coverage-plugin-2.2.4-mule-server-plugin/META-INF/mule-artifact/mule-artifact.json (org.mule.runtime.module.artifact.api.descriptor.ArtifactDescriptorCreateException)
+2020-09-22 14:17:11,746 [Embedded] INFO  com.mulesoft.mule.runtime.plugin.factory.ServerPluginDescriptorFactory - Creating plugin from folder /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/server-plugins/munit-coverage-plugin-2.2.4-mule-server-plugin.jar
+2020-09-22 14:17:11,762 [Embedded] INFO  com.mulesoft.mule.runtime.plugin.manager.MulePluginManager - Registering plugin: coverage-server-plugin
+2020-09-22 14:17:11,763 [Embedded] INFO  org.mule.munit.plugins.coverage.CoverageServerPlugin - Initialising coverage plugin...
+2020-09-22 14:17:11,763 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.plugin.ServerPluginCoreExtension@6493d839' initialized
+2020-09-22 14:17:11,795 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.deployment.ApiDeploymentCoreExtension@56193af6' initialized
+2020-09-22 14:17:12,253 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.analytics.AnalyticsCoreExtension@6ca29192' initialized
+2020-09-22 14:17:12,253 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Starting core extensions
+2020-09-22 14:17:12,253 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.module.cluster.internal.HazelcastClusterCoreExtension@30c85662' started
+2020-09-22 14:17:12,253 [Embedded] INFO  com.mulesoft.mule.runtime.plugin.manager.MulePluginManager - Starting plugin: coverage-server-plugin
+2020-09-22 14:17:12,253 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.plugin.ServerPluginCoreExtension@6493d839' started
+2020-09-22 14:17:12,253 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.deployment.ApiDeploymentCoreExtension@56193af6' started
+2020-09-22 14:17:12,253 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.analytics.AnalyticsCoreExtension@6ca29192' started
+2020-09-22 14:17:12,299 [Embedded] INFO  org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer - ================== New Exploded Artifact: default
+2020-09-22 14:17:12,351 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'default'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:12,352 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'default'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:12,581 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension ee (version: 4.1.5 vendor: MuleSoft, Inc. )
+2020-09-22 14:17:12,591 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension mule (version: 4.1.5 vendor: MuleSoft, Inc. )
+2020-09-22 14:17:12,690 [Embedded] INFO  org.mule.runtime.core.internal.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: Azul Systems, Inc. Please consider changing to a recommended JDK vendor.
+2020-09-22 14:17:12,692 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-09-22 14:17:12,692 [Embedded] INFO  org.mule.runtime.config.internal.MuleArtifactContext - Refreshing org.mule.runtime.config.internal.MuleArtifactContext: default (DOMAIN)
+2020-09-22 14:17:12,779 [Embedded] INFO  org.mule.runtime.config.internal.processor.MuleInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 14:17:12,781 [Embedded] INFO  org.mule.runtime.config.internal.ObjectProviderAwareBeanFactory - Overriding bean definition for bean '_muleConfiguration' with a different definition: replacing [Generic bean: class [org.mule.runtime.core.api.config.DefaultMuleConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.mule.runtime.config.internal.MuleConfigurationConfigurator]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2020-09-22 14:17:13,270 [Embedded] INFO  org.mule.runtime.core.internal.util.journal.TransactionJournal - Using files for tx logs /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/default/queue-tx-log/tx1.log and /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/default/queue-tx-log/tx2.log
+2020-09-22 14:17:13,275 [Embedded] INFO  org.mule.runtime.core.internal.util.journal.TransactionJournal - Using files for tx logs /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/default/queue-xa-tx-log/tx1.log and /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/default/queue-xa-tx-log/tx2.log
+2020-09-22 14:17:13,642 [Embedded] INFO  org.mule.runtime.api.el.AbstractBindingContextBuilderFactory - Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'java.net.URLClassLoader@61f3fbb8'
+2020-09-22 14:17:13,671 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-09-22 14:17:13,671 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-09-22 14:17:13,679 [Embedded] INFO  org.mule.runtime.core.internal.context.DefaultMuleContext - 
+**********************************************************************
+* Domain: default                                                    *
+* OS encoding: UTF-8, Mule encoding: UTF-8                           *
+*                                                                    *
+**********************************************************************
+2020-09-22 14:17:13,680 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain - 
+**********************************************************************
+* Started domain 'default'                                           *
+**********************************************************************
+2020-09-22 14:17:13,682 [Embedded] INFO  org.mule.runtime.module.deployment.internal.DeploymentDirectoryWatcher - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Mule is up and kicking (every 5000ms)                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:13,683 [Embedded] INFO  org.mule.runtime.module.deployment.internal.StartupSummaryDeploymentListener - 
+**********************************************************************
+*              - - + DOMAIN + - -               * - - + STATUS + - - *
+**********************************************************************
+* default                                       * DEPLOYED           *
+**********************************************************************
+
+2020-09-22 14:17:13,703 [Embedded] INFO  org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer - ================== New Exploded Artifact: hello-world-example-2
+2020-09-22 14:17:17,111 [Embedded] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: 1da12ec1-7614-43a3-bf24-ff754cab8ddf:hello-world-example-2:pom:1.1.21. This may take a while...
+2020-09-22 14:17:17,303 [Embedded] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: com.mulesoft.munit:munit-tools:pom:2.2.4. This may take a while...
+2020-09-22 14:17:17,355 [Embedded] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: org.mule.connectors:mule-sockets-connector:pom:1.1.5. This may take a while...
+2020-09-22 14:17:17,378 [Embedded] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: org.mule.connectors:mule-http-connector:pom:1.5.4. This may take a while...
+2020-09-22 14:17:17,426 [Embedded] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: com.mulesoft.munit:munit-runner:pom:2.2.4. This may take a while...
+2020-09-22 14:17:17,476 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New app 'hello-world-example-2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:17,476 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hello-world-example-2'                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:17,496 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension ee (version: 4.1.5 vendor: MuleSoft, Inc. )
+2020-09-22 14:17:17,498 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension mule (version: 4.1.5 vendor: MuleSoft, Inc. )
+2020-09-22 14:17:18,147 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension MUnit (version: 2.2.4 vendor: MuleSoft, Inc. )
+2020-09-22 14:17:18,148 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension Sockets (version: 1.1.5 vendor: Mulesoft )
+2020-09-22 14:17:18,150 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension HTTP (version: 1.5.4 vendor: Mulesoft )
+2020-09-22 14:17:18,153 [Embedded] INFO  org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager - Registering extension MUnit Tools (version: 2.2.4 vendor: Mulesoft )
+2020-09-22 14:17:18,782 [Embedded] INFO  org.mule.runtime.core.internal.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: Azul Systems, Inc. Please consider changing to a recommended JDK vendor.
+2020-09-22 14:17:18,782 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-09-22 14:17:18,782 [Embedded] INFO  org.mule.runtime.config.internal.LazyMuleArtifactContext - Refreshing org.mule.runtime.config.internal.LazyMuleArtifactContext: hello-world-example-2 (APP)
+2020-09-22 14:17:18,791 [Embedded] INFO  org.mule.runtime.config.internal.ObjectProviderAwareBeanFactory - Overriding bean definition for bean '_muleComponentInitialStateManager' with a different definition: replacing [Generic bean: class [org.mule.runtime.config.internal.dsl.model.config.DefaultComponentInitialStateManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.mule.munit.runner.component.state.MunitComponentInitialStateManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2020-09-22 14:17:18,797 [Embedded] INFO  org.mule.runtime.config.internal.processor.MuleInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-22 14:17:18,797 [Embedded] INFO  org.mule.runtime.config.internal.ObjectProviderAwareBeanFactory - Overriding bean definition for bean '_muleConfiguration' with a different definition: replacing [Generic bean: class [org.mule.runtime.core.api.config.DefaultMuleConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.mule.runtime.config.internal.MuleConfigurationConfigurator]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2020-09-22 14:17:18,956 [Embedded] INFO  org.mule.runtime.core.internal.util.journal.TransactionJournal - Using files for tx logs /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/hello-world-example-2/queue-tx-log/tx1.log and /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/hello-world-example-2/queue-tx-log/tx2.log
+2020-09-22 14:17:18,956 [Embedded] INFO  org.mule.runtime.core.internal.util.journal.TransactionJournal - Using files for tx logs /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/hello-world-example-2/queue-xa-tx-log/tx1.log and /Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/munitworkingdir-122683730524296/container/./.mule/hello-world-example-2/queue-xa-tx-log/tx2.log
+2020-09-22 14:17:19,013 [Embedded] WARN  com.mulesoft.mule.runtime.gw.client.provider.ApiPlatformClientProvider - Client ID or Client Secret were not provided. API Platform client is DISABLED.
+2020-09-22 14:17:19,016 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hello-world-example-2'                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:19,016 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-09-22 14:17:19,016 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-09-22 14:17:19,021 [Embedded] INFO  org.mule.runtime.core.internal.context.DefaultMuleContext - 
+**********************************************************************
+* Application: hello-world-example-2                                 *
+* OS encoding: UTF-8, Mule encoding: UTF-8                           *
+*                                                                    *
+**********************************************************************
+2020-09-22 14:17:19,022 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication - 
+**********************************************************************
+* Started app 'hello-world-example-2'                                *
+* Application plugins:                                               *
+*  - MUnit (munit-runner-2.2.4-mule-plugin)                          *
+*  - MUnit Tools (munit-tools-2.2.4-mule-plugin)                     *
+*  - Sockets (mule-sockets-connector-1.1.5-mule-plugin)              *
+*  - HTTP (mule-http-connector-1.5.4-mule-plugin)                    *
+**********************************************************************
+2020-09-22 14:17:19,025 [munit.01] INFO  org.mule.munit.runner.remote.api.server.RunnerServer - Waiting for client connection 
+2020-09-22 14:17:19,026 [munit.01] INFO  org.mule.munit.runner.remote.api.server.RunnerServer - Client connection received from localhost - true
+2020-09-22 14:17:19,265 [munit.01] INFO  org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory - Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'java.net.URLClassLoader@61f3fbb8'
+2020-09-22 14:17:19,294 [munit.01] WARN  org.mule.runtime.core.internal.secutiry.tls.TlsProperties - File tls-default.conf not found, using default configuration.
+2020-09-22 14:17:19,294 [munit.01] INFO  org.mule.runtime.api.tls.AbstractTlsContextFactoryBuilderFactory - Loaded TlsContextFactoryBuilderFactory implementation 'org.mule.runtime.module.tls.api.DefaultTlsContextFactoryBuilderFactory' from classloader 'java.net.URLClassLoader@61f3fbb8'
+2020-09-22 14:17:19,563 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Request_configuration
+2020-09-22 14:17:19,733 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+2020-09-22 14:17:19,793 [munit.01] INFO  org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager - Initialising flow: hello-worldFlow
+2020-09-22 14:17:19,818 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Initialising Bean: listener
+2020-09-22 14:17:19,832 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Request_configuration
+2020-09-22 14:17:20,218 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+2020-09-22 14:17:20,234 [munit.01] INFO  org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager - Starting flow: hello-worldFlow
+2020-09-22 14:17:20,392 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Starting Bean: listener
+2020-09-22 14:17:21,564 [[MuleRuntime].cpuLight.23: [hello-world-example-2].hello-worldFlow.CPU_LITE @6a43791c] INFO  org.mule.runtime.core.internal.processor.LoggerMessageProcessor - /helloWorld
+2020-09-22 14:17:22,505 [munit.01] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Stopping Bean: listener
+2020-09-22 14:17:22,515 [munit.01] INFO  org.mule.munit.runner.model.Suite - SUCCESS - test: hello-worldFlowTest - Time elapsed: 2.12 sec
+2020-09-22 14:17:22,517 [munit.01] INFO  org.mule.munit.runner.remote.api.server.RunnerServer - Waiting for client connection 
+2020-09-22 14:17:22,518 [Embedded] INFO  org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer - ================== Request to Undeploy Artifact: hello-world-example-2
+2020-09-22 14:17:22,555 [Embedded] INFO  org.mule.munit.plugins.coverage.server.CoverageServerClient - Sending covered locations report...
+2020-09-22 14:17:22,555 [Embedded] INFO  org.mule.munit.plugins.coverage.server.CoverageServerClient - Connected to localhost in port 50102
+2020-09-22 14:17:22,557 [Embedded] INFO  org.mule.munit.plugins.coverage.server.CoverageServerClient - Sending covered locations report...
+2020-09-22 14:17:22,557 [Embedded] INFO  org.mule.munit.plugins.coverage.server.CoverageServerClient - Connected to localhost in port 50102
+2020-09-22 14:17:22,558 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hello-world-example-2'                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:22,560 [Embedded] INFO  org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager - Stopping flow: hello-worldFlow
+2020-09-22 14:17:22,619 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Request_configuration
+2020-09-22 14:17:22,678 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+2020-09-22 14:17:22,680 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-09-22 14:17:22,680 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-09-22 14:17:22,736 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hello-world-example-2'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:22,736 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-09-22 14:17:22,737 [Embedded] INFO  org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager - Disposing flow: hello-worldFlow
+2020-09-22 14:17:22,737 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Disposing Bean: listener
+2020-09-22 14:17:22,740 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Request_configuration
+2020-09-22 14:17:22,740 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+2020-09-22 14:17:22,837 [Embedded] INFO  org.mule.runtime.config.internal.LazyMuleArtifactContext - Closing org.mule.runtime.config.internal.LazyMuleArtifactContext: hello-world-example-2 (APP)
+2020-09-22 14:17:22,839 [Embedded] INFO  org.mule.runtime.core.internal.context.DefaultMuleContext - 
+**********************************************************************
+* Application "hello-world-example-2" shut down normally on:         *
+* 9/22/20 2:17 PM                                                    *
+* Up for: 0 days, 0 hours, 0 mins, 3.822 sec                         *
+**********************************************************************
+2020-09-22 14:17:22,861 [Embedded] INFO  org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Undeployed artifact 'hello-world-example-2'              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:22,862 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping domain 'default'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:22,863 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-09-22 14:17:22,863 [Embedded] INFO  org.mule.runtime.core.internal.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-09-22 14:17:22,864 [Embedded] INFO  org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing domain 'default'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-09-22 14:17:22,864 [Embedded] INFO  org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-09-22 14:17:22,868 [Embedded] INFO  org.mule.runtime.config.internal.MuleArtifactContext - Closing org.mule.runtime.config.internal.MuleArtifactContext: default (DOMAIN)
+2020-09-22 14:17:22,869 [Embedded] INFO  org.mule.runtime.core.internal.context.DefaultMuleContext - 
+**********************************************************************
+* Domain "default" shut down normally on: 9/22/20 2:17 PM            *
+* Up for: 0 days, 0 hours, 0 mins, 9.202 sec                         *
+**********************************************************************
+2020-09-22 14:17:22,871 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Stopping core extensions
+2020-09-22 14:17:22,871 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.analytics.AnalyticsCoreExtension@6ca29192' stopped
+2020-09-22 14:17:22,913 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.deployment.ApiDeploymentCoreExtension@56193af6' stopped
+2020-09-22 14:17:22,913 [Embedded] INFO  com.mulesoft.mule.runtime.plugin.manager.MulePluginManager - Stopping plugin: coverage-server-plugin
+2020-09-22 14:17:22,913 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.plugin.ServerPluginCoreExtension@6493d839' stopped
+2020-09-22 14:17:22,913 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.module.cluster.internal.HazelcastClusterCoreExtension@30c85662' stopped
+2020-09-22 14:17:22,913 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Disposing core extensions
+2020-09-22 14:17:22,913 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.module.cluster.internal.HazelcastClusterCoreExtension@30c85662' disposed
+2020-09-22 14:17:22,916 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.plugin.ServerPluginCoreExtension@6493d839' disposed
+2020-09-22 14:17:22,916 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.deployment.ApiDeploymentCoreExtension@56193af6' disposed
+2020-09-22 14:17:23,099 [Embedded] INFO  org.mule.runtime.module.launcher.coreextension.DefaultMuleCoreExtensionManagerServer - Core extension 'com.mulesoft.mule.runtime.gw.analytics.AnalyticsCoreExtension@6ca29192' disposed
+2020-09-22 14:17:23,171 [Embedded] INFO  org.mule.service.scheduler.internal.DefaultSchedulerService - Stopping DefaultSchedulerService...
+2020-09-22 14:17:23,227 [Embedded] INFO  org.quartz.core.QuartzScheduler - Scheduler [MuleRuntime]._$_NON_CLUSTERED shutting down.
+2020-09-22 14:17:23,227 [Embedded] INFO  org.quartz.core.QuartzScheduler - Scheduler [MuleRuntime]._$_NON_CLUSTERED paused.
+2020-09-22 14:17:23,497 [Embedded] INFO  org.quartz.core.QuartzScheduler - Scheduler [MuleRuntime]._$_NON_CLUSTERED shutdown complete.
+2020-09-22 14:17:23,497 [Embedded] INFO  org.mule.service.scheduler.internal.DefaultSchedulerService - Stopped org.mule.service.scheduler.internal.DefaultSchedulerService$2@63a0cda

@@ -1,0 +1,28 @@
+{
+  "configs": [
+    "test-suite.xml",
+    "hello-world.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "1da12ec1-7614-43a3-bf24-ff754cab8ddf:hello-world-example-2:1.1.21",
+  "minMuleVersion": "4.1.4",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": [
+        "log4j2.xml",
+        "hello-world.xml",
+        "mule-artifact.properties",
+        "log4j2-test.xml"
+      ],
+      "includeTestDependencies": "true",
+      "exportedPackages": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
