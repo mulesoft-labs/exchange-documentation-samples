@@ -1,1 +1,1 @@
-# exchange-maven-v3-examples
+# exchange-documentation-samples
