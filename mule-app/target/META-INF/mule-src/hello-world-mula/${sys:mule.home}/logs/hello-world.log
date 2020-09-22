@@ -353,18 +353,3 @@
 2020-09-22 15:22:16,573 [pool-4-thread-1] ERROR org.mule.munit.plugins.coverage.server.CoverageServer - Failed to start Coverage Server in port 50299
 2020-09-22 15:22:16,574 [main] INFO  org.mule.munit.remote.coverage.CoverageManager - Calculating application coverage
 2020-09-22 15:22:16,586 [main] INFO  org.mule.munit.remote.RemoteRunner - Done
-2020-09-22 15:22:56,537 [main] INFO  org.mule.munit.remote.RemoteRunner - Run Started
-2020-09-22 15:22:56,904 [main] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: com.mulesoft.mule.distributions:mule-runtime-impl-bom:pom:4.1.5. This may take a while...
-2020-09-22 15:22:57,656 [main] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: org.mule.distributions:mule-module-embedded-impl-bom:pom:4.1.5. This may take a while...
-2020-09-22 15:22:57,805 [main] INFO  org.mule.maven.client.internal.AetherMavenClient - About to fetch required dependencies for artifact: com.mulesoft.mule.distributions:mule-runtime-impl-bom:pom:4.1.5. This may take a while...
-2020-09-22 15:23:03,014 [main] INFO  org.mule.munit.remote.coverage.CoverageManager - Starting coverage server
-2020-09-22 15:23:03,015 [pool-4-thread-1] INFO  org.mule.munit.plugins.coverage.server.CoverageServer - Coverage Server starting...
-2020-09-22 15:23:03,015 [pool-4-thread-1] INFO  org.mule.munit.plugins.coverage.server.CoverageServer - Waiting for coverage client connection in port [50363]...
-2020-09-22 15:23:11,456 [pool-4-thread-1] INFO  org.mule.munit.plugins.coverage.server.CoverageServer - Coverage client connection received from localhost - true
-2020-09-22 15:23:11,457 [pool-4-thread-1] INFO  org.mule.munit.plugins.coverage.server.CoverageServer - Coverage client connection received from localhost - true
-2020-09-22 15:23:11,463 [pool-7-thread-1] INFO  org.mule.munit.remote.coverage.CoverageManager - accumulating covered locations
-2020-09-22 15:23:11,464 [pool-6-thread-1] INFO  org.mule.munit.remote.coverage.CoverageManager - accumulating covered locations
-2020-09-22 15:23:13,440 [main] INFO  org.mule.munit.remote.coverage.CoverageManager - Shutting down coverage server
-2020-09-22 15:23:13,441 [pool-4-thread-1] ERROR org.mule.munit.plugins.coverage.server.CoverageServer - Failed to start Coverage Server in port 50363
-2020-09-22 15:23:13,441 [main] INFO  org.mule.munit.remote.coverage.CoverageManager - Calculating application coverage
-2020-09-22 15:23:13,453 [main] INFO  org.mule.munit.remote.RemoteRunner - Done

@@ -1,0 +1,21 @@
+id: Set Authentication Client ID Custom Policy Example
+name: Set Authentication Client ID Custom Policy Example
+description: Sets client ID data of the Mule Event to propagate information using the flow pipeline
+category: Custom
+type: custom
+resourceLevelSupported: true
+encryptionSupported: false
+standalone: true
+requiredCharacteristics: []
+providedCharacteristics: []
+configuration:
+  - propertyName: clientIdExpression
+    name: Client ID Expression
+    description: Mule Expression to be used to extract the Client ID value from API requests
+    type: expression
+    defaultValue: "#[attributes.headers['agw_client_id']]"
+    optional: false
+    sensitive: false
+    allowMultiple: false
+
+

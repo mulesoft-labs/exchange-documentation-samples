@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:http-policy="http://www.mulesoft.org/schema/mule/http-policy"
+      xmlns:authentication="http://www.mulesoft.org/schema/mule/authentication"
+      xmlns:http-transform="http://www.mulesoft.org/schema/mule/http-policy-transform"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+               http://www.mulesoft.org/schema/mule/http-policy http://www.mulesoft.org/schema/mule/http-policy/current/mule-http-policy.xsd
+               http://www.mulesoft.org/schema/mule/authentication http://www.mulesoft.org/schema/mule/authentication/current/mule-authentication.xsd
+               http://www.mulesoft.org/schema/mule/http-policy-transform http://www.mulesoft.org/schema/mule/http-policy-transform/current/mule-http-policy-transform.xsd">
+
+    <http-policy:proxy name="{{{policyId}}}-custom-policy">
+        <http-policy:source>
+
+            <!--  This is where the client ID obtainment logic should be added -->
+
+            <try>
+                <set-variable variableName="clientIdValue" value="{{{clientIdExpression}}}"/>
+                <authentication:add-properties newProperties="#[{'client_id': vars.clientIdValue}]"/>
+
+                <http-policy:execute-next/>
+
+                <error-handler>
+                    <on-error-continue logException="true">
+                        <http-transform:set-response statusCode="500">
+                            <http-transform:body>#[
+                                output application/json
+                                ---
+                                {"error": "$(error.description)"}
+                                ]</http-transform:body>
+                        </http-transform:set-response>
+                    </on-error-continue>
+                </error-handler>
+
+            </try>
+        </http-policy:source>
+    </http-policy:proxy>
+
+</mule>

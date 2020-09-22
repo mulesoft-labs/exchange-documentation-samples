@@ -1,5 +1,6 @@
 {
   "configs": [
+    "test-suite.xml",
     "hello-world.xml"
   ],
   "secureProperties": [],
@@ -10,12 +11,14 @@
   "classLoaderModelLoaderDescriptor": {
     "id": "mule",
     "attributes": {
-      "exportedPackages": [],
       "exportedResources": [
         "log4j2.xml",
         "hello-world.xml",
-        "mule-artifact.properties"
-      ]
+        "mule-artifact.properties",
+        "log4j2-test.xml"
+      ],
+      "includeTestDependencies": "true",
+      "exportedPackages": []
     }
   },
   "bundleDescriptorLoader": {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MULE_EE.4.1.5.test-suite" time="2.144" failures="0" errors="0" skipped="0" tests="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MULE_EE.4.1.5.test-suite" time="2.015" failures="0" errors="0" skipped="0" tests="1">
   <properties>
     <property key="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property key="sun.boot.library.path" value="/Users/figuacel/.sdkman/candidates/java/8.0.232-zulu/jre/lib"/>
@@ -63,5 +63,5 @@
     <property key="munit.system.properties.file" value="/Users/figuacel/Development/repositories/mule/exchange-maven-v3-examples/mule-app/target/user.system.properties"/>
     <property key="org.glassfish.grizzly.DEFAULT_MEMORY_MANAGER" value="org.glassfish.grizzly.memory.HeapMemoryManager"/>
   </properties>
-  <testcase time="2.124" name="hello-worldFlowTest" classname="MULE_EE.4.1.5.test-suite"/>
+  <testcase time="1.996" name="hello-worldFlowTest" classname="MULE_EE.4.1.5.test-suite"/>
 </testsuite>
