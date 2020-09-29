@@ -2,7 +2,7 @@
 
 This repository has some projects and files as examples to be published through the exchange publishing services.
 
-You could see examples of uses at publishing section of our documentation:
+You could see examples of uses at the publishing section of our documentation:
 
 ## Publishing Maven projects:
 
