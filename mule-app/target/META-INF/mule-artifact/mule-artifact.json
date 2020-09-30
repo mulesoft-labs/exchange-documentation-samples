@@ -4,7 +4,7 @@
   ],
   "secureProperties": [],
   "redeploymentEnabled": true,
-  "name": "1da12ec1-7614-43a3-bf24-ff754cab8ddf:hello-world-mula:1.2.3",
+  "name": "1da12ec1-7614-43a3-bf24-ff754cab8ddf:hello-world-mula2:1.2.9",
   "minMuleVersion": "4.1.4",
   "requiredProduct": "MULE_EE",
   "classLoaderModelLoaderDescriptor": {
