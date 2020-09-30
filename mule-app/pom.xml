@@ -8,8 +8,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>1da12ec1-7614-43a3-bf24-ff754cab8ddf</groupId>
-    <artifactId>hello-world-mula</artifactId>
+    <groupId>YOUR_GROUP_ID</groupId>
+    <artifactId>hello-world-app</artifactId>
     <version>1.2.3</version>
 
     <packaging>mule-application</packaging>
@@ -18,7 +18,7 @@
     <description>A mule application uploaded through ingestion pipeline</description>
 
   <properties>
-    <exchange.url>https://maven.devx.anypoint.mulesoft.com/api/v3/organizations/1da12ec1-7614-43a3-bf24-ff754cab8ddf/maven</exchange.url>
+    <exchange.url>https://maven.devx.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven/</exchange.url>
   </properties> 
 
 
@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>mule-maven-plugin</artifactId>
-                <version>3.5.0-SANITIES</version>
+                <version>3.5.0-SNAPSHOT</version>
                 <extensions>true</extensions>
                 <configuration>
                     <classifier>mule-application</classifier>

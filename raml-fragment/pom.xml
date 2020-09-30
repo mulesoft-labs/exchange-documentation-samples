@@ -6,7 +6,7 @@
     <version>1.2.3</version>
 
     <name>raml fragment</name>
-    <description>This raml-fragment was published through Exchange Maven Facade API v3</description>
+    <description>A raml-fragment published through Exchange Maven Facade API v3</description>
 
     <properties>
         <apiVersion>v1</apiVersion>
@@ -53,7 +53,7 @@
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>exchange-mule4-maven-plugin</artifactId>
-                <version>0.0.0-valkyr</version>
+                <version>0.0.8</version>
                 <executions>
                     <execution>
                         <id>validate</id>

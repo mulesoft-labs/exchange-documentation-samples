@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>org.mule.examples</groupId>
+        <artifactId>examples-catalog</artifactId>
+        <version>2.1.5-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>YOUR_GROUP_ID</groupId>
+    <artifactId>hello-world-template</artifactId>
+    <version>1.2.3</version>
+
+    <packaging>mule-application</packaging>
+    
+    <name>hello-world</name>
+    <description>An template uploaded through ingestion pipeline</description>
+
+  <properties>
+    <exchange.url>https://maven.devx.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven</exchange.url>
+  </properties> 
+
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/munit</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>3.5.0-SNAPSHOT</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <classifier>mule-application-template</classifier>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.mulesoft.munit.tools</groupId>
+                <artifactId>munit-maven-plugin</artifactId>
+                <version>${munit.version}</version>
+                <executions>
+                    <execution>
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                            <goal>coverage-report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <coverage>
+                        <runCoverage>true</runCoverage>
+                        <formats>
+                            <format>html</format>
+                        </formats>
+                    </coverage>
+                    <runtimeVersion>${app.runtime}</runtimeVersion>
+                    <dynamicPorts>
+                        <dynamicPort>http.port</dynamicPort>
+                    </dynamicPorts>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mule.connectors</groupId>
+            <artifactId>mule-http-connector</artifactId>
+            <version>${http.connector.version}</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mule.connectors</groupId>
+            <artifactId>mule-sockets-connector</artifactId>
+            <version>${sockets.connector.version}</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.mulesoft.munit</groupId>
+            <artifactId>munit-runner</artifactId>
+            <version>${munit.version}</version>
+            <classifier>mule-plugin</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mulesoft.munit</groupId>
+            <artifactId>munit-tools</artifactId>
+            <version>${munit.version}</version>
+            <classifier>mule-plugin</classifier>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>exchange-dev</id>
+            <name>Corporate Repository</name>
+            <url>${exchange.url}</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>exchange-dev</id>
+            <name>Corporate Repository</name>
+            <url>${exchange.url}</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
+</project>
