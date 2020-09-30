@@ -1,1 +1,9 @@
+.classpath
+.project
+.settings
+.idea
+*.iml
+target
 .DS_Store
+logs/
+velocity.log
