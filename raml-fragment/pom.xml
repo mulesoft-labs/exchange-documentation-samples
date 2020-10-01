@@ -52,7 +52,7 @@
 
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
-                <artifactId>exchange-mule4-maven-plugin</artifactId>
+                <artifactId>exchange-mule-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <executions>
                     <execution>
@@ -73,6 +73,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 
     <repositories>
         <repository>

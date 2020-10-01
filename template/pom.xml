@@ -18,7 +18,7 @@
     <description>An template uploaded through ingestion pipeline</description>
 
   <properties>
-    <exchange.url>https://maven.devx.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven</exchange.url>
+    <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven</exchange.url>
   </properties> 
 
     <build>

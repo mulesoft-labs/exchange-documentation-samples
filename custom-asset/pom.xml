@@ -19,8 +19,8 @@
         <plugins>
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
-                <artifactId>exchange-mule4-maven-plugin</artifactId>
-                <version>0.0.0-valkyr</version>
+                <artifactId>exchange-mule-maven-plugin</artifactId>
+                <version>0.0.8</version>
                 <executions>
                     <execution>
                         <id>validate</id>
@@ -40,6 +40,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 
   <repositories>
     <repository>
