@@ -7,7 +7,7 @@
     <artifactId>YOUR_ASSET_ID</artifactId>
     <version>1.2.3</version>
 
-    <name>Custom asset without file</name>
+    <name>Java library uploaded as a custom asset</name>
     <description>This custom-asset was published through Exchange Maven Facade API v3</description>
 
     <properties>
