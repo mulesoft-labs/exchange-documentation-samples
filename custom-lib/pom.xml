@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
     <groupId>YOUR_GROUP_ID</groupId>
-    <artifactId>ASSET_ID</artifactId>
+    <artifactId>YOUR_ASSET_ID</artifactId>
     <version>1.2.3</version>
 
     <name>Java library uploaded as a custom asset</name>
