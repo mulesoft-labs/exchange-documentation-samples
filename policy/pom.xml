@@ -2,55 +2,50 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+      <groupId>YOUR_GROUP_ID</groupId>
+      <artifactId>exchange-documentation-samples</artifactId>
+      <version>1.0.0</version>
+      <relativePath>../pom.xml</relativePath>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>YOUR_GROUP_ID</groupId>
-    <artifactId>custom-policy</artifactId>
-    <version>1.2.3</version>
-
-    <name>Custom policy</name>
-    <description>A custom policy published through ingestion pipeline</description>
+    <artifactId>hello-world-custom-policy</artifactId>
+    <version>1.0.1</version>
 
     <packaging>mule-policy</packaging>
 
-    <properties>
-        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_ORG_ID/maven</exchange.url>
-    </properties>
+    <name>Hello World Custom Policy</name>
+    <description>A custom policy uploaded using Exchange Maven Facade v3</description>
+
+    <dependencies>
+        <!-- This extension allows to easily update HTTP attributes from a policy -->
+        <!-- Full documentation: https://docs.mulesoft.com/api-manager/2.x/http-policy-transform -->
+        <dependency>
+            <groupId>com.mulesoft.anypoint</groupId>
+            <artifactId>mule-http-policy-transform-extension</artifactId>
+            <version>${http.policy.transform.extension}</version>
+            <classifier>mule-plugin</classifier>
+            <!-- HTTP Connector is excluded to avoid packaging it with the policy, since the application's HTTP connector is used -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mule.connectors</groupId>
+                    <artifactId>mule-http-connector</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>mule-maven-plugin</artifactId>
-                <version>3.5.0-SNAPSHOT</version>
+                <version>${mule.maven.plugin.version}</version>
                 <extensions>true</extensions>
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>exchange-dev</id>
-            <name>Corporate Repository</name>
-            <url>${exchange.url}</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>exchange-dev</id>
-            <name>Corporate Repository</name>
-            <url>${exchange.url}</url>
-            <layout>default</layout>
-        </repository>
-    </distributionManagement>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>mule-plugin</id>
-            <name>Mule Repository</name>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
-        </pluginRepository>
-    </pluginRepositories>
 </project>

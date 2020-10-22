@@ -1,26 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>YOUR_GROUP_ID</groupId>
+        <artifactId>exchange-documentation-samples</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
 
     <groupId>YOUR_GROUP_ID</groupId>
-    <artifactId>YOUR_ASSET_ID</artifactId>
-    <version>1.2.3</version>
+    <artifactId>hello-world-lib</artifactId>
+    <version>1.0.0</version>
 
-    <name>Java library uploaded as a custom asset</name>
-    <description>This custom-asset was published through Exchange Maven Facade API v3</description>
-
-    <properties>
-        <type>custom</type>
-        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_ORG_ID/maven</exchange.url>
-    </properties>
+    <name>Hello World Library</name>
+    <description>An Exchange custom asset uploaded using Exchange Maven Facade v3</description>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
+                <configuration>
+                    <classifier>custom</classifier>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>exchange-mule-maven-plugin</artifactId>
-                <version>0.0.8</version>
+                <version>${exchange.mule.maven.plugin}</version>
                 <executions>
                     <execution>
                         <id>validate</id>
@@ -40,32 +50,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
-  <repositories>
-    <repository>
-      <id>exchange-dev</id>
-      <name>Corporate Repository</name>
-      <url>${exchange.url}</url>
-      <layout>default</layout>
-    </repository>
-  </repositories>
-
-  <distributionManagement>
-    <repository>
-      <id>exchange-dev</id>
-      <name>Corporate Repository</name>
-      <url>${exchange.url}</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
 </project>

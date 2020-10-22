@@ -1,0 +1,11 @@
+id: Hello World Custom Policy
+name: Hello World Custom Policy
+description: A hello world mule policy example
+category: Custom
+type: custom
+resourceLevelSupported: true
+encryptionSupported: false
+standalone: true
+requiredCharacteristics: []
+providedCharacteristics: []
+configuration: []
