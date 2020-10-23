@@ -68,7 +68,7 @@
     <repository>
       <id>exchange-dev</id>
       <name>Corporate Repository</name>
-      <url>https://maven.qax.anypoint.mulesoft.com/api/v3/maven/</url>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven/</url>
       <layout>default</layout>
     </repository>
   </repositories>
