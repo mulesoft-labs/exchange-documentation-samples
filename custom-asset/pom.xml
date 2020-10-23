@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
     <groupId>YOUR_GROUP_ID</groupId>
-    <artifactId>YOUR_ASSET_ID</artifactId>
+    <artifactId>hello-world-pom</artifactId>
     <version>1.2.3</version>
 
-    <name>Custom asset without file</name>
-    <description>This custom-asset was published through Exchange Maven Facade API v3</description>
+    <packaging>pom</packaging>
+
+    <name>Hello World POM</name>
+    <description>This custom asset that only contains a POM file uploaded using Exchange Maven Facade API v3</description>
 
     <properties>
         <type>custom</type>
-        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_ORG_ID/maven</exchange.url>
+        <exchange.mule.maven.plugin>0.0.8</exchange.mule.maven.plugin>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <build>
@@ -20,7 +26,7 @@
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>exchange-mule-maven-plugin</artifactId>
-                <version>0.0.8</version>
+                <version>${exchange.mule.maven.plugin}</version>
                 <executions>
                     <execution>
                         <id>validate</id>
@@ -37,35 +43,37 @@
                         </goals>
                     </execution>
                 </executions>
+                <inherited>false</inherited>
             </plugin>
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>anypoint-exchange</id>
+            <name>Corporate Repository</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>central</id>
-            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
+            <id>mulesoft-releases</id>
+            <name>mulesoft release repository</name>
+            <layout>default</layout>
+            <url>http://repository.mulesoft.org/releases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
-  <repositories>
-    <repository>
-      <id>exchange-dev</id>
-      <name>Corporate Repository</name>
-      <url>${exchange.url}</url>
-      <layout>default</layout>
-    </repository>
-  </repositories>
-
-  <distributionManagement>
-    <repository>
-      <id>exchange-dev</id>
-      <name>Corporate Repository</name>
-      <url>${exchange.url}</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>anypoint-exchange</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven
+            </url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 </project>
