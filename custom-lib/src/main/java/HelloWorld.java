@@ -1,9 +1,8 @@
 /**
- * MuleSoft Examples
- * Copyright 2020 MuleSoft, Inc.
- *
- * This product includes software developed at
- * MuleSoft, Inc. (http://www.mulesoft.com/).
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/Apache-2.0
  */
 package helloworld;
 
