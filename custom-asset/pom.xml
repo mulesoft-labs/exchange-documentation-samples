@@ -6,7 +6,7 @@
 
     <groupId>YOUR_GROUP_ID</groupId>
     <artifactId>hello-world-pom</artifactId>
-    <version>1.2.3</version>
+    <version>1.0.0</version>
 
     <packaging>pom</packaging>
 
