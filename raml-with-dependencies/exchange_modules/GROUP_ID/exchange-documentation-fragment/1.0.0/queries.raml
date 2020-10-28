@@ -1,0 +1,19 @@
+#%RAML 1.0 ResourceType
+
+usage: Use this resourceType to represent saved search queries
+description: Saved search queries
+get:
+  description: Gets a list of queries
+  responses:
+    200:
+      body: 
+        application/json:
+          example: |
+            [{
+              "name": "name",
+              "types": [
+                  "connector",
+                  "rest-api"
+              ],
+              "search": "salesforce"
+            }]

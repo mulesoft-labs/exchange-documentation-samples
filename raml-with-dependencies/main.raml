@@ -1,0 +1,17 @@
+#%RAML 1.0
+title: exchange-api
+version: v2
+mediaType: application/json
+baseUri: https://anypoint.mulesoft.com/exchange/api/v2
+
+resourceTypes:
+  queries: !include exchange_modules/GROUP_ID/exchange-documentation-fragment/1.0.0/queries.raml
+
+/users:
+  displayName: Users
+  description: Users
+
+  /me/queries:
+    displayName: Queries
+    description: Queries that belong to an user
+    type: queries

@@ -34,3 +34,17 @@ For example:
 ```
 grep --exclude="*.md" -r -l 'YOUR_GROUP_ID' * | xargs sed -i 's/YOUR_GROUP_ID/18f84756-2795-4d58-871a-7ece326ac1f3/g'
 ``` 
+
+## Get an access token for an Anypoint Platform user.
+Replace ANYPOINT_USERNAME with your Anypoint Platform user account name. Replace ANYPOINT_PASSWORD with your password.
+
+Execute:
+```
+curl --location --request POST 'https://anypoint.mulesoft.com/accounts/login' \
+     --header 'Content-Type: application/json' \
+     --header 'Accept: application/json' \
+     --data-raw '{
+        "username":"ANYPOINT_USERNAME",
+        "password":"ANYPOINT_PASSWORD"
+     }' | jq -r ".access_token"
+```
