@@ -2,7 +2,7 @@
 
 This project demonstrates how to publish a simple Mule application example to Exchange using the Exchange Maven Facade API version 3. It's similar to the Mule application project, but in this example the asset type is 'Example'. Exchange *Examples* are applications that are ready to run in Anypoint Studio and demonstrate a use case or solution.
 
-### Publish to Exchange
+## Publish to Exchange
 
 1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
 2. Execute:
@@ -31,4 +31,6 @@ Successful execution produces output similar to this:
 [INFO] ------------------------------------------------------------------------
 ```
 
-Alternatively, you can import [this template from Studio](https://docs.mulesoft.com/studio/7.5/import-project-exchange).
+## Advanced Example
+
+Import [this template from Studio](https://docs.mulesoft.com/studio/7.5/import-project-exchange).
