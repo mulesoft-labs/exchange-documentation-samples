@@ -21,7 +21,7 @@ Note that the pom.xml includes maven-jar-plugin to set the classifier of the art
 </plugin>
 ```
 
-### Publish to Exchange
+## Publish to Exchange
 
 1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
 2. Execute:
@@ -50,7 +50,9 @@ Successful execution produces output similar to this:
 [INFO] ------------------------------------------------------------------------
 ```
 
-Alternatively, you can import this library in any of your Maven projects:
+## Advanced Example
+
+Import this library in any Maven project:
 
 ```
 <dependency>
