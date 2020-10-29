@@ -1,15 +1,18 @@
 # Mule application
 
-This project demonstrates how to publish a simple Mule Application to Exchange using Exchange Maven Facade v3 API.
+This project demonstrates how to publish a simple Mule application to Exchange using the Exchange Maven Facade API version 3.
 
-### How to publish to Exchange
+## Publish to Exchange
 
-1. Make sure you have executed the `grep` command explained in the root [README.md](../README.md) file of this repository
-2. Execute the following command in your console
+1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
+2. Execute:
+
 ```
 mvn clean deploy -DskipTests
 ```
-3. If everything is ok you’ll get:
+
+Successful execution produces output similar to this:
+
 ```
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
@@ -27,7 +30,14 @@ mvn clean deploy -DskipTests
 [INFO] Finished at: 2020-09-22T15:23:59-03:00
 [INFO] ------------------------------------------------------------------------
 ```
-4. Additionally, you can try deploying the application in CloudHub using [Runtime Manager](https://docs.mulesoft.com/runtime-manager/deploying-to-cloudhub). After the deploying is ready, call http://<your-app-url>/helloWorld and you should see the following output:
+
+## Advanced Example
+
+1. Deploy the application in CloudHub using [Runtime Manager](https://docs.mulesoft.com/runtime-manager/deploying-to-cloudhub).
+2. After the deployment is ready, call `http://<your-app-url>/helloWorld`.
+
+Successful execution produces this:
+
 ```
 Hello World!
 ```

@@ -1,19 +1,22 @@
 # Custom Asset
 
-This project demonstrates how to publish a simple Custom Asset that only contains a single POM file. The main use case that this asset type solves for the Maven experience is to be able to upload a parent POM file to Exchange that then you can then use inside any type of Maven projects, such as a Connector or a Mule Application.    
+This project demonstrates how to publish a simple custom asset that contains only a single POM file. The main use case for this asset type in the Maven experience is uploading a parent POM file to Exchange. Then the file can be used in any type of Maven project, such as a connector or a Mule application.
 
-Notice that the pom.xml includes maven-jar-plugin to set the classifier of the artifact to `custom`
+Note that the pom.xml includes maven-jar-plugin to set the classifier of the artifact to `custom`.
 
-In order to publish this type of asset to Exchange, the pom file must contain the plugin `exchange-mule-maven-plugin`. Don't forget to include `<inherited>false</inherited>` in the plugin configuration and the property `<type>custom</type>`, otherwise it may not work properly.   
+To publish this type of asset to Exchange, the POM file must contain the plugin `exchange-mule-maven-plugin`. To work correctly, the file must include `<inherited>false</inherited>` in the plugin configuration and the property `<type>custom</type>`.
 
-### How to publish to Exchange
+## Publish to Exchange
 
-1. Make sure you have executed the `grep` command explained in the root [README.md](../README.md) file of this repository
-2. Execute the following command in your console
+1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
+2. Execute:
+
 ```
 mvn clean deploy
 ```
-3. If everything is ok you’ll get:
+
+Successful execution produces output similar to this:
+
 ```
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
@@ -31,7 +34,11 @@ mvn clean deploy
 [INFO] Finished at: 2020-09-22T15:23:59-03:00
 [INFO] ------------------------------------------------------------------------
 ```
-4. Additionally, you can try using this as the parent pom of any or your maven projects:
+
+## Advanced Example
+
+Use this as the parent POM of any Maven project:
+
 ```
 <parent>
     <groupId>YOUR_GROUP_ID</groupId>

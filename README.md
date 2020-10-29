@@ -1,8 +1,8 @@
 # Exchange documentation examples
 
-This repository has some projects and files as examples to be published through the exchange publishing services.
+The projects and files in this repository are examples to be published through the Exchange publishing services.
 
-You could see examples of uses at the publishing section of our documentation:
+The documentation about Exchange publication has examples that use this code:
 
 ## Publishing Maven projects:
 
@@ -14,7 +14,8 @@ You could see examples of uses at the publishing section of our documentation:
 
 ## Configure the groupId of the Anypoint Organization where you will be publishing assets
 
-Execute the following command replacing only `<add-the-group-id-of-your-org-here>` with the organization id where you will be publishing assets 
+Execute the following command. Replace `<add-the-group-id-of-your-org-here>` with the organization ID where the assets will be published.
+
 ### MacOS
 ```
 grep --exclude="*.md" -r -l 'YOUR_GROUP_ID' * | xargs sed -i "" 's/YOUR_GROUP_ID/<add-the-group-id-of-your-org-here>/g'
