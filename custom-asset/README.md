@@ -39,7 +39,7 @@ Successful execution produces output similar to this:
 
 Use this as the parent POM of any Maven project:
 
-```
+```xml
 <parent>
     <groupId>YOUR_GROUP_ID</groupId>
     <artifactId>hello-world-pom</artifactId>
