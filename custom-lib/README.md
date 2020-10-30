@@ -26,13 +26,13 @@ Note that the pom.xml includes maven-jar-plugin to set the classifier of the art
 1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
 2. Execute:
 
-```
-mvn clean deploy
+```shell
+$ mvn clean deploy
 ```
 
 Successful execution produces output similar to this:
 
-```
+```shell
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
 [INFO]   ------------------------------------------------------------
