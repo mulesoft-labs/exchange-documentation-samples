@@ -10,7 +10,7 @@ The file type can be `jar` or `zip`. In this example, the file type is `jar`.
 
 Note that the pom.xml includes maven-jar-plugin to set the classifier of the artifact to `custom`.
 
-```
+```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-jar-plugin</artifactId>
@@ -26,13 +26,13 @@ Note that the pom.xml includes maven-jar-plugin to set the classifier of the art
 1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
 2. Execute:
 
-```
-mvn clean deploy
+```shell
+$ mvn clean deploy
 ```
 
 Successful execution produces output similar to this:
 
-```
+```shell
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
 [INFO]   ------------------------------------------------------------
@@ -54,7 +54,7 @@ Successful execution produces output similar to this:
 
 Import this library in any Maven project:
 
-```
+```xml
 <dependency>
     <groupId>YOUR_GROUP_ID</groupId>
     <artifactId>hello-world-lib</artifactId>

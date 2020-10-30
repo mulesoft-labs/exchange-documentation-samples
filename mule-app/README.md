@@ -7,13 +7,13 @@ This project demonstrates how to publish a simple Mule application to Exchange u
 1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
 2. Execute:
 
-```
-mvn clean deploy -DskipTests
+```shell
+$ mvn clean deploy -DskipTests
 ```
 
 Successful execution produces output similar to this:
 
-```
+```shell
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
 [INFO]   ------------------------------------------------------------
