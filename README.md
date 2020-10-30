@@ -1,16 +1,10 @@
-# Exchange documentation samples
+# Exchange documentation examples
 
 The projects and files in this repository are examples that may be published to your organization's private Exchange.
 
 The documentation about Exchange publication APIs are using these examples here:
-
-## Publishing Maven projects:
-
-[Exchange Maven Facade](https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/exchange-maven-facade-api-http/)
-
-## Publishing assets:
-
-[Exchange API](https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/exchange-experience-api/)
+* [Exchange Maven Facade](https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/exchange-maven-facade-api-http/)
+* [Exchange API](https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/exchange-experience-api/)
 
 ## Available examples:
 
@@ -21,9 +15,9 @@ The documentation about Exchange publication APIs are using these examples here:
 * [Custom Asset](custom-asset/README.md)
 * [Custom Library](custom-lib/README.md)
 
-## Configure the groupId of the Anypoint Organization where you will be publishing assets
+## Getting started
 
-Execute the following command. Replace `<add-the-group-id-of-your-org-here>` with the organization ID where the assets will be published.
+Configure the groupId of the Anypoint Organization where you will be publishing assets. Execute the following command. Replace `<add-the-group-id-of-your-org-here>` with the organization ID where the assets will be published.
 
 ### MacOS
 ```shell
