@@ -11,13 +11,13 @@ To publish this type of asset to Exchange, the POM file must contain the plugin 
 1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
 2. Execute:
 
-```
-mvn clean deploy
+```shell
+$ mvn clean deploy
 ```
 
 Successful execution produces output similar to this:
 
-```
+```shell
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
 [INFO]   ------------------------------------------------------------
