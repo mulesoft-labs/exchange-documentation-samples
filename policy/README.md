@@ -1,16 +1,19 @@
 # Mule Policy
 
-This project demonstrates how to publish a simple Mule Policy to Exchange using Exchange Maven Facade v3 API.
+This project demonstrates how to publish a simple Mule policy to Exchange using the Exchange Maven Facade API version 3.
 
-### How to publish to Exchange
+## Publish to Exchange
 
-1. Make sure you have executed the `grep` command explained in the root [README.md](../README.md) file of this repository
-2. Execute the following command in your console
+1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
+2. Execute:
+
+```shell
+$ mvn clean deploy
 ```
-mvn clean deploy
-```
-3. If everything is ok you’ll get:
-```
+
+Successful execution produces output similar to this:
+
+```shell
 [INFO]   ------------------------------------------------------------
 [INFO]   Publication status: completed
 [INFO]   ------------------------------------------------------------
@@ -27,4 +30,7 @@ mvn clean deploy
 [INFO] Finished at: 2020-09-22T15:23:59-03:00
 [INFO] ------------------------------------------------------------------------
 ```
-4. Additionally, you can try applying the Mule Policy using API Manager. For further information check [here](https://docs.mulesoft.com/api-manager/2.x/policies-landing-page)
+
+## Advanced Example
+
+Apply the Mule policy using API Manager as described in the [Policies](https://docs.mulesoft.com/api-manager/2.x/policies-landing-page) documentation.

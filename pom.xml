@@ -34,7 +34,7 @@
 
         <mule.maven.plugin.version>3.5.0-SNAPSHOT</mule.maven.plugin.version>
         <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
-        <exchange.mule.maven.plugin>0.0.8</exchange.mule.maven.plugin>
+        <exchange.mule.maven.plugin>0.0.9</exchange.mule.maven.plugin>
         <maven.site.plugin.version>3.7.1</maven.site.plugin.version>
         <maven.project.info.reports.plugin.version>3.0.0</maven.project.info.reports.plugin.version>
     </properties>
@@ -70,6 +70,8 @@
                 </configuration>
                 <executions>
                     <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
