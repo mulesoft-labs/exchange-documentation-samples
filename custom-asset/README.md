@@ -8,8 +8,16 @@ To publish this type of asset to Exchange, the POM file must contain the plugin 
 
 ## Publish to Exchange
 
-1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
-2. Execute:
+1. Ensure that you have the following credentials set in your `~/.m2/settings.xml`
+    ```xml
+      <server>
+        <id>anypoint-exchange</id>
+        <username>YOUR_USERNAME</username>
+        <password>YOUR_PASSWORD</password>
+      </server>
+    ```
+2. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
+3. Execute:
 
 ```shell
 $ mvn clean deploy
