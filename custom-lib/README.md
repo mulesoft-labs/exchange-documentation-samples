@@ -23,7 +23,7 @@ Note that the pom.xml includes maven-jar-plugin to set the classifier of the art
 
 ## Publish to Exchange
 
-1. Ensure that you have the following credentials set in your `~/.m2/settings.xml`
+1. Make sure you have the following credentials configured in your `~/.m2/settings.xml`
     ```xml
       <server>
         <id>anypoint-exchange</id>
