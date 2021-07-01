@@ -1,7 +1,3 @@
-**How do I get access to the Anypoint Platform?**
-
-Create an Anypoint platform account [here](https://anypoint.mulesoft.com/login/#/signup). If your organization already has an Anypoint platform account, then request the administrator who manages your organization to send you an invite to the desired email address.
-
 **What role do I need to access the Exchange API v2?**
 
 Anyone who is registered in Anypoint can use Exchange API v2.

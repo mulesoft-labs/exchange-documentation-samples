@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <name>project-name</name>
-    <groupId>YOUR_GROUP_ID</groupId>
+    <name>Mule Application with Mutable Data</name>
+    <groupId>f516a981-37af-4bd3-92e3-3da722bafef5</groupId>
     <artifactId>asset-with-docs-and-tags</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>mule-application</packaging>
 
     <properties>
-        <exchange.url>https://maven.qax.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven/</exchange.url>
+        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/f516a981-37af-4bd3-92e3-3da722bafef5/maven/</exchange.url>
         <categories key="categoryKey">someValue</categories>
         <fields key="fieldKey">someValue</fields>
         <tags>tag1,tag2,tag3</tags>
@@ -80,7 +80,7 @@
 
     <repositories>
         <repository>
-            <id>ExchangeOrg</id>
+            <id>anypoint-exchange</id>
             <name>Corporate Repository</name>
             <url>${exchange.url}</url>
             <layout>default</layout>
@@ -89,7 +89,7 @@
 
     <distributionManagement>
         <repository>
-            <id>ExchangeOrg</id>
+            <id>anypoint-exchange</id>
             <name>Corporate Repository</name>
             <url>${exchange.url}</url>
             <layout>default</layout>
