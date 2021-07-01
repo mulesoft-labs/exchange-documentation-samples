@@ -4,11 +4,19 @@ This project demonstrates how to publish a simple Mule application example to Ex
 
 ## Publish to Exchange
 
-1. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
-2. Execute:
+1. Make sure you have the following credentials configured in your `~/.m2/settings.xml`
+    ```xml
+      <server>
+        <id>anypoint-exchange</id>
+        <username>YOUR_USERNAME</username>
+        <password>YOUR_PASSWORD</password>
+      </server>
+    ```
+2. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
+3. Execute:
 
 ```shell
-$ mvn clean deploy -DskipTests
+$ mvn clean deploy -DskipTests -Dlicense.skip=true
 ```
 
 Successful execution produces output similar to this:
