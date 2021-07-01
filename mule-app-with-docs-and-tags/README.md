@@ -1,6 +1,6 @@
 # Mule application
 
-This project demonstrates how to publish a simple Mule application to Exchange using the Exchange Maven Facade API version 3.
+This project demonstrates how to publish a simple Mule application to Exchange modifying asset mutable data while processing the asset. Such as categories, custom fields, tags, and documentation. The output should be a new asset created with the information used to describe them in the same request.
 
 ## Publish to Exchange
 
@@ -13,6 +13,9 @@ This project demonstrates how to publish a simple Mule application to Exchange u
       </server>
     ```
 2. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
+3. This example tries to publish the category and custom field, whose keys are: `categoryKey` and `fieldKey`. They have to be configured for your organization, we recommend changing the keys for some of your organization or creating both through our API, in the following links you will have more information:
+- [Exchange - Manage categories](https://docs.mulesoft.com/exchange/to-manage-categories)
+- [Exchange - Manage custom fields](https://docs.mulesoft.com/exchange/to-manage-custom-fields)
 3. Execute:
 
 ```shell
@@ -37,15 +40,4 @@ Successful execution produces output similar to this:
 [INFO] Total time:  01:10 min
 [INFO] Finished at: 2020-09-22T15:23:59-03:00
 [INFO] ------------------------------------------------------------------------
-```
-
-## Advanced Example
-
-1. Deploy the application in CloudHub using [Runtime Manager](https://docs.mulesoft.com/runtime-manager/deploying-to-cloudhub).
-2. After the deployment is ready, call `http://<your-app-url>/helloWorld`.
-
-Successful execution produces this:
-
-```
-Hello World!
 ```
