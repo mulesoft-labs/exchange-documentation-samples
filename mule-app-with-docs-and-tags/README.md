@@ -16,7 +16,10 @@ This project demonstrates how to publish a simple Mule application to Exchange m
 3. This example tries to publish the category and custom field, whose keys are: `categoryKey` and `fieldKey`. They have to be configured for your organization, we recommend changing the keys for some of your organization or creating both through our API, in the following links you will have more information:
 - [Exchange - Manage categories](https://docs.mulesoft.com/exchange/to-manage-categories)
 - [Exchange - Manage custom fields](https://docs.mulesoft.com/exchange/to-manage-custom-fields)
-3. Execute:
+
+  *note that maven-assembly-plugin is configured in the pom file, to zip the content of `/src/main/resources/docs` and upload it during the deploy phase with the classifier `docs`*
+
+4. Execute:
 
 ```shell
 $ mvn clean deploy -DskipTests -Dlicense.skip=true
