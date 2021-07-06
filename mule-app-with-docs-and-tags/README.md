@@ -13,7 +13,7 @@ This project demonstrates how to publish a simple Mule application to Exchange m
       </server>
     ```
 2. Execute the `grep` command explained in the root [README.md](../README.md) file of this repository.
-3. This example tries to publish the category and custom field, whose keys are: `categoryKey` and `fieldKey`. They have to be configured for your organization, we recommend changing the keys for some of your organization or creating both through our API, in the following links you will have more information:
+3. This example tries to publish the category and custom field, whose keys are: `categoryKey` and `fieldKey`. They have to be configured for your organization, the publication will fail if they are not configured for your organization or if they are not deleted from the pom, we recommend changing the keys for some of your organization or creating both through our API, in the following links you will have more information:
 - [Exchange - Manage categories](https://docs.mulesoft.com/exchange/to-manage-categories)
 - [Exchange - Manage custom fields](https://docs.mulesoft.com/exchange/to-manage-custom-fields)
 
