@@ -1,6 +1,6 @@
 # Mule application
 
-This project demonstrates how to publish a simple Mule application to Exchange modifying asset mutable data while processing the asset. Such as categories, custom fields, tags, and documentation. The output should be a new asset created with the information used to describe them in the same request.
+This project demonstrates how to publish a simple Mule application to Exchange modifying asset mutable data while processing the asset. Such as `categories`, `custom fields`, `tags`, and `documentation`. The output should be a new asset created with the information used to describe them in the same request.
 
 ## Publish to Exchange
 
