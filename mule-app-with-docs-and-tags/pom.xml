@@ -9,7 +9,7 @@
     <packaging>mule-application</packaging>
 
     <properties>
-        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/f516a981-37af-4bd3-92e3-3da722bafef5/maven/</exchange.url>
+        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven/</exchange.url>
         <categories key="categoryKey">someValue</categories>
         <fields key="fieldKey">someValue</fields>
         <tags>tag1,tag2,tag3</tags>
