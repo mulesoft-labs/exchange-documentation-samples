@@ -1,4 +1,4 @@
-# Create Mule Application Template with MutableData
+# Create Mule Application Template with Mutable Data
 
 This project demonstrates how to publish a simple Template to Exchange and modify the asset's mutable data while processing the asset. Mutable data includes `categories`, `custom fields`, `tags`, and `documentation`. The output is a new asset created with the information used to describe the data in the same request.
 
