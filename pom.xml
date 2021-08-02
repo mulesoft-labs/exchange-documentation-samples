@@ -160,7 +160,7 @@
         <repository>
             <id>anypoint-exchange</id>
             <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/f516a981-37af-4bd3-92e3-3da722bafef5/maven
             </url>
             <layout>default</layout>
         </repository>

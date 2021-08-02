@@ -18,6 +18,14 @@
     <name>Hello World Application Template</name>
     <description>A mule application template uploaded using Exchange Maven Facade v3</description>
 
+    <properties>
+        <exchange.url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven/</exchange.url>
+        <categories key="categoryKey">someValue</categories>
+        <fields key="fieldKey">someValue</fields>
+        <tags>tag1,tag2,tag3</tags>
+        <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+    </properties>
+
     <build>
         <testResources>
             <testResource>
