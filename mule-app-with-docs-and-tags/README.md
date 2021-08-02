@@ -2,14 +2,7 @@
 
 This project demonstrates how to publish a simple Mule application to Exchange and modify the asset's mutable data while processing the asset. Mutable data includes `categories`, `custom fields`, `tags`, and `documentation`. The output is a new asset created with the information used to describe the data in the same request.
 
----
-**NOTE**
-
-Mule applications are not listed in Exchange UI, this means that the asset created will not be easily accessible, however the example can be valuable for people who need to add specific tags to their asset for search purposes.
-
-For an asset that can be seen from the exchange UI please follow the example of: [Create Mule Application Template with MutableData](../template-with-mutable-data/README.md)
-
----
+The Exchange user interface does not list Mule applications but does list Mule application templates. To create a Mule application template with mutable data, follow the example [Create Mule Application Template with Mutable Data](../template-with-mutable-data/README.md).
 
 ## Publish to Exchange
 
