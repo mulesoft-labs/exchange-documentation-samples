@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>YOUR_GROUP_ID</groupId>
+        <artifactId>exchange-documentation-samples</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>YOUR_GROUP_ID</groupId>
+    <artifactId>hello-world-template</artifactId>
+    <version>1.0.0</version>
+
+    <packaging>mule-application</packaging>
+
+    <name>Hello World Application Template</name>
+    <description>A mule application template uploaded using Exchange Maven Facade v3</description>
+
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/munit</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>${maven-assembly-plugin.version}</version>
+                <configuration>
+                  <appendAssemblyId>true</appendAssemblyId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>create-distribution</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>/src/main/resources/docs-assembly/assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>${mule.maven.plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <classifier>mule-application-template</classifier>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.mulesoft.munit.tools</groupId>
+                <artifactId>munit-maven-plugin</artifactId>
+                <version>${munit.version}</version>
+                <executions>
+                    <execution>
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                            <goal>coverage-report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <coverage>
+                        <runCoverage>true</runCoverage>
+                        <formats>
+                            <format>html</format>
+                        </formats>
+                    </coverage>
+                    <runtimeVersion>${app.runtime}</runtimeVersion>
+                    <dynamicPorts>
+                        <dynamicPort>http.port</dynamicPort>
+                    </dynamicPorts>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mule.connectors</groupId>
+            <artifactId>mule-http-connector</artifactId>
+            <version>${http.connector.version}</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mule.connectors</groupId>
+            <artifactId>mule-sockets-connector</artifactId>
+            <version>${sockets.connector.version}</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.mulesoft.munit</groupId>
+            <artifactId>munit-runner</artifactId>
+            <version>${munit.version}</version>
+            <classifier>mule-plugin</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mulesoft.munit</groupId>
+            <artifactId>munit-tools</artifactId>
+            <version>${munit.version}</version>
+            <classifier>mule-plugin</classifier>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,15 +1,6 @@
-# Mule Application
+# Create Mule Application Template with MutableData
 
-This project demonstrates how to publish a simple Mule application to Exchange and modify the asset's mutable data while processing the asset. Mutable data includes `categories`, `custom fields`, `tags`, and `documentation`. The output is a new asset created with the information used to describe the data in the same request.
-
----
-**NOTE**
-
-Mule applications are not listed in Exchange UI, this means that the asset created will not be easily accessible, however the example can be valuable for people who need to add specific tags to their asset for search purposes.
-
-For an asset that can be seen from the exchange UI please follow the example of: [Create Mule Application Template with MutableData](../template-with-mutable-data/README.md)
-
----
+This project demonstrates how to publish a simple Template to Exchange and modify the asset's mutable data while processing the asset. Mutable data includes `categories`, `custom fields`, `tags`, and `documentation`. The output is a new asset created with the information used to describe the data in the same request.
 
 ## Publish to Exchange
 
@@ -45,7 +36,7 @@ Successful execution produces output similar to this:
 [INFO]     - Status: completed
 [INFO]     .........................................
 [INFO]   Your asset has been successfully published to Exchange.
-[INFO]   You can check it at: https://anypoint.mulesoft.com/api/v3/maven/exchange/YOUR_ORG_ID/hello-world-app/1.0.0
+[INFO]   You can check it at: https://anypoint.mulesoft.com/api/v3/maven/exchange/YOUR_ORG_ID/hello-world-template/1.0.0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -53,3 +44,7 @@ Successful execution produces output similar to this:
 [INFO] Finished at: 2020-09-22T15:23:59-03:00
 [INFO] ------------------------------------------------------------------------
 ```
+
+## Advanced Example
+
+Import [this template from Studio](https://docs.mulesoft.com/studio/7.5/import-project-exchange).
