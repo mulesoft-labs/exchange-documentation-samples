@@ -36,7 +36,7 @@ Successful execution produces output similar to this:
 [INFO]     - Status: completed
 [INFO]     .........................................
 [INFO]   Your asset has been successfully published to Exchange.
-[INFO]   You can check it at: https://anypoint.mulesoft.com/api/v3/maven/exchange/YOUR_ORG_ID/hello-world-template/1.0.0
+[INFO]   You can check it at: https://anypoint.mulesoft.com/api/v3/maven/exchange/YOUR_ORG_ID/hello-world-template/1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
