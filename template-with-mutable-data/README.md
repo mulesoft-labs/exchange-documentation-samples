@@ -17,7 +17,7 @@ This project demonstrates how to publish a simple Template to Exchange and modif
 - [Exchange - Manage Categories](https://docs.mulesoft.com/exchange/to-manage-categories)
 - [Exchange - Manage Custom Fields](https://docs.mulesoft.com/exchange/to-manage-custom-fields)
 
-  *Note that maven-assembly-plugin is configured in the pom file to zip the content of `/src/main/resources/docs` and upload it during the deploy phase with the classifier `docs`.*
+  *Note that mule-maven-plugin will zip the content of `/exchange-docs` and upload it during the deploy phase with the classifier `docs`.*
 
 4. Execute:
 

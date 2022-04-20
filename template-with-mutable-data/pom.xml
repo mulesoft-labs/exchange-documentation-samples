@@ -23,7 +23,8 @@
         <categories key="categoryKey">someValue</categories>
         <fields key="fieldKey">someValue</fields>
         <tags>tag1,tag2,tag3</tags>
-        <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+        <mule.maven.plugin.version>3.6.0</mule.maven.plugin.version>
+        <exchange.mule.maven.plugin>0.0.16</exchange.mule.maven.plugin>
     </properties>
 
     <build>
@@ -34,28 +35,6 @@
             </testResource>
         </testResources>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>${maven-assembly-plugin.version}</version>
-                <configuration>
-                  <appendAssemblyId>true</appendAssemblyId>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>create-distribution</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <descriptors>
-                                <descriptor>/src/main/resources/docs-assembly/assembly.xml</descriptor>
-                            </descriptors>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>mule-maven-plugin</artifactId>
