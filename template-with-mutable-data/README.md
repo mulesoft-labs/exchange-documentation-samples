@@ -4,6 +4,8 @@ This project demonstrates how to publish a simple Template to Exchange and modif
 
 The file `main/resources/exchange-docs/icon.png` will be used as the asset's icon in Exchange. The icon file must be named `icon` and the supported file formats are: png, jpeg, gif, bmp, svg 
 
+The icon will only be uploaded only for the first created version of the asset. The icon file will be ignored on subsequent version uploads. The icon can be modified through the Exchange UI.
+
 ## Publish to Exchange
 
 1. Configure these credentials in your `~/.m2/settings.xml`:
