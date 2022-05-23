@@ -10,7 +10,7 @@ This project demonstrates how to publish an AsyncAPI to Exchange using Exchange 
 Replace the fields:
  - `organizationId`: organization ID of the organization where the asset will be published.
  - `groupId`: group ID of the asset to publish
- - `file-path`: local path where is the file `async-trade-request-api.yaml`
+ - `file-path`: local path where is the file `async-trade-request-api.zip`
 
 ```
 curl -v \
@@ -18,8 +18,9 @@ curl -v \
   -H 'x-sync-publication: true' \
   -F 'name=YAML AsyncAPI asset name' \
   -F 'description=Description of the asset' \
+  -F 'properties.apiVersion=v1' \
   -F 'properties.mainFile=async-trade-request-api.yaml' \
-  -F 'files.async-trade-request-api.yaml=@/file-path/async-trade-request-api.yaml' \
+  -F 'files.evented-api.zip=@/file-path/async-trade-request-api.zip' \
 https://anypoint.mulesoft.com/exchange/api/v2/organizations/:organizationId/assets/:groupId/exchange-documentation-asyncapi/1.0.0
 ```
 
