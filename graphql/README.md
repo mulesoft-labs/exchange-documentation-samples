@@ -15,7 +15,7 @@ Replace the fields:
  - `assetId`: asset ID of the asset to publish
  - `version`: version of the asset to publish
 
- - `file-path`: local path where is the file `queries.raml`
+ - `file-path`: local path where is the file `example.graphql`
  - `mainFile`: when the asset file is packaged as a zip file, the mainfile property it's used to identify the principal file
  - `classifier`: should be `graph` or `graph-apollo`
 
