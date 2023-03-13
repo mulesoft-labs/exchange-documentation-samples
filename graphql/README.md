@@ -29,15 +29,11 @@ curl -v \
   -F 'name=Graphql example' \
   -F 'description=Description of the asset' \
   -F 'properties.mainFile=example.graphql' \
-  -F 'files.graphql.graphql=@/file-path/example.graph' \
-https://anypoint.mulesoft.com/exchange/api/v2/organizations/:organizationId/assets/:groupId/exchange-documentation/1.0.0
+  -F 'files.graphql.graphql=@/:file-path/example.graph' \
+https://anypoint.mulesoft.com/exchange/api/v2/organizations/:organizationId/assets/:groupId/:assetId/:version
 ```
 
-Note here used variables (they could be changed)
-
-  * `exchange-documentation` is the assetId 
-  * `1.0.0` is the version of the asset to be published. 
-  * `files.graphql.graph` where the first `graphql` is the asset classifier
+_Note the field `files.graphql.graphql` where the first `graphql` is the asset classifier and must be `graphql` to this asset type_
 
 ---
 
@@ -49,12 +45,8 @@ curl -v \
   -F 'name=Graphql example' \
   -F 'description=Description of the asset' \
   -F 'properties.mainFile=example.graphql' \
-  -F 'files.graphql-apollo.graphql=@/file-path/example-apollo.graph' \
-https://anypoint.mulesoft.com/exchange/api/v2/organizations/:organizationId/assets/:groupId/exchange-documentation/1.0.0
+  -F 'files.graphql-apollo.graphql=@/:file-path/example-apollo.graph' \
+https://anypoint.mulesoft.com/exchange/api/v2/organizations/:organizationId/assets/:groupId/:assetId/:version
 ```
 
-Note here used variables (they could be changed)
-
-  * `exchange-documentation` is the assetId 
-  * `1.0.0` is the version of the asset to be published. 
-  * `files.graphql-apollo.graph` where `graphql-apollo` is the asset classifier
+_Note the field `files.graphql-apollo.graph` where `graphql-apollo` is the asset classifier and must be `graphql-apollo` to this asset type_
