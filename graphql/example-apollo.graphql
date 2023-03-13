@@ -1,0 +1,70 @@
+extend schema
+@link(url: "https://specs.apollo.dev/federation/v2.0",
+    import: ["@key"])
+
+type Product @key(fields: "id") {
+    id: ID!
+    title: String
+    url: String
+    description: String
+    price: Price
+    salesRank(category: ProductCategory = ALL): Int
+    salesRankOverall: Int
+    salesRankInCategory: Int
+    category: ProductCategory
+    images(size: Int = 1000): [String]
+    primaryImage(size: Int = 1000): String
+    reviews: [Review]
+    reviewSummary: ReviewSummary
+}
+
+type Review @key(fields: "id") {
+    id: ID!
+    rating: Float
+    content: String
+}
+
+type ReviewSummary {
+    totalReviews: Int
+    averageRating: Float
+}
+
+type Price {
+    cost: Money
+
+    """A number between 0 and 1 signifying the % discount"""
+    deal: Float
+    dealSavings: Money
+}
+
+type Department {
+    category: ProductCategory
+    url: String
+}
+
+enum ProductCategory {
+    ALL
+    GIFT_CARDS
+    ELECTRONICS
+    CAMERA_N_PHOTO
+    VIDEO_GAMES
+    BOOKS
+    CLOTHING
+}
+
+type Money {
+    amount: Float
+    currencyCode: CURRENCY_CODE
+}
+
+enum CURRENCY_CODE {
+    USD
+    EUR
+}
+
+type Query {
+    bestSellers(category: ProductCategory = ALL): [Product]
+    categories: [Department]
+    product(id: ID!): Product
+    review(id: ID!): Review
+}
