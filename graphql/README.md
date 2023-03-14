@@ -1,6 +1,6 @@
 # Graphql
 
-This project demonstrates how to publish a simple Graph to Exchange using Exchange API v2 API.
+This project demonstrates how to publish a simple GraphQL to Exchange using Exchange API v2 API.
 
 
 ## How to publish to Exchange
