@@ -1,0 +1,74 @@
+directive @dg_entityKey(field: String!) on OBJECT | INTERFACE
+directive @dg_entityCompoundKey(fields: [String!]!) on OBJECT | INTERFACE
+directive @dg_entityProvider(keyMapping: [_DgKeyMapping!]!) on FIELD_DEFINITION
+directive @dg_entityReference(targetTypeName: String, fieldName: String, keyMapping: [_DgKeyMapping!]!) repeatable on OBJECT | INTERFACE
+directive @dg_hidden on OBJECT | INTERFACE | FIELD_DEFINITION | UNION | ENUM | INPUT_OBJECT
+directive @dg_name(name: String) on OBJECT | INTERFACE | FIELD_DEFINITION
+
+input _DgKeyMapping {
+    fieldName: String,
+    argumentName: String
+}
+
+type Product @dg_entityCompoundKey(fields: ["id", "title"]) @dg_entityReference(targetTypeName: "ProductNotes", fieldName: "productNotes", keyMapping: [{ fieldName: "notes", argumentName: "notesId" }]){
+    id: String!
+    title: String!
+    description: String
+    price: Price
+    reviews: [Review]
+    reviewSummary: ReviewSummary
+    notesId: String! @dg_hidden
+}
+
+type ProductNotes @dg_entityKey(field: "id") {
+    id: String!
+    notes: String
+}
+
+type Review @dg_entityKey(field: "id") {
+    id: String!
+    rating: Float @dg_hidden
+    content: String
+}
+
+type ReviewSummary @dg_name(name: "Summary") {
+    totalReviews: Int
+    averageRating: Float
+}
+
+type Price {
+    cost: Money
+    deal: Float @dg_hidden
+    dealSavings: Money
+}
+
+type Department {
+    category: ProductCategory
+    url: String
+}
+
+enum ProductCategory {
+    ALL
+    GIFT_CARDS
+    ELECTRONICS
+    CAMERA_N_PHOTO
+    VIDEO_GAMES
+    BOOKS
+    CLOTHING
+}
+
+type Money {
+    amount: Float
+    currencyCode: CURRENCY_CODE
+}
+
+enum CURRENCY_CODE {
+    USD
+    EUR
+}
+
+type Query {
+    bestSellers(category: ProductCategory = ALL): [Product]
+    product(id: String!, title: String!): Product @dg_entityProvider(keyMapping: [{ fieldName: "id", argumentName: "id" }, { fieldName: "title", argumentName: "title" }])
+    review(id: String!): Review @dg_entityProvider(keyMapping: [{ fieldName: "id", argumentName: "id" }])
+}
