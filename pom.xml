@@ -155,6 +155,11 @@
             <layout>default</layout>
             <url>http://repository.mulesoft.org/snapshots/</url>
         </pluginRepository>
+        <pluginRepository>
+            <id>mule-plugin</id>
+            <name>Mule Repository</name>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+        </pluginRepository>
     </pluginRepositories>
     <distributionManagement>
         <repository>
