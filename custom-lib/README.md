@@ -67,6 +67,6 @@ Import this library in any Maven project:
     <groupId>YOUR_GROUP_ID</groupId>
     <artifactId>hello-world-lib</artifactId>
     <version>1.0.0</version>
-    <classifier>custom</custom>
+    <classifier>custom</classifier>
 </dependency>
 ```
