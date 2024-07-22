@@ -138,6 +138,13 @@
             <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
             <layout>default</layout>
         </repository>
+        <repository>
+            <!-- It is necessary to have defined the Exchange repository to publish the asset -->
+            <id>anypoint-exchange</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven/</url>
+            <layout>default</layout>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -165,8 +172,7 @@
         <repository>
             <id>anypoint-exchange</id>
             <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven
-            </url>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven/</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
