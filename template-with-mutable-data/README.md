@@ -51,4 +51,4 @@ Successful execution produces output similar to this:
 
 ## Advanced Example
 
-Import [this template from Studio](https://docs.mulesoft.com/studio/7.5/import-project-exchange).
+Import [this template from Studio](https://docs.mulesoft.com/studio/latest/import-project-exchange).
