@@ -32,7 +32,7 @@
         <sockets.connector.version>1.1.5</sockets.connector.version>
         <http.policy.transform.extension>3.1.0</http.policy.transform.extension>
 
-        <mule.maven.plugin.version>3.5.0</mule.maven.plugin.version>
+        <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
         <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
         <exchange.mule.maven.plugin>0.0.13</exchange.mule.maven.plugin>
         <maven.site.plugin.version>3.7.1</maven.site.plugin.version>
